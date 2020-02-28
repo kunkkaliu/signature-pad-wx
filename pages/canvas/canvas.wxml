@@ -1,0 +1,10 @@
+<!--pages/canvas/canvas.wxml-->
+<view class="canvas-container">
+  <view class="canvas-wrap">
+    <canvas type="2d" disable-scroll="true" bindtouchstart="handleTouchStart" bindtouchmove="handleTouchMove" bindtouchend="handleTouchEnd" id="myCanvas"></canvas>
+  </view>
+  <view class="canvas-btn-wrap">
+  <button type="primary" bindtap="handleSaveCanvas" class="canvas-btn">保存本地</button>
+  <button type="warn" bindtap="handleClearCanvas" class="canvas-btn">清空</button>
+  </view>
+</view>
